@@ -1,4 +1,4 @@
-## EX NO:1 study-of-basic-gates
+### study-of-basic-gates
 
 **AIM:** 
 
@@ -65,43 +65,48 @@ Y= A⊕B
 **PROGRAM**
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
-
- Developed by: P.Hemasonica
- 
- RegisterNumber: 212222230048
- ```
-module gates_exp1(a, b, c, d, e, x, y, z);
-  input a, b;
-  output c, d, e, x, y, z;
-
-  assign c = a & b;   // AND gate
-  assign d = a | b;   // OR gate
-  assign e = a ^ b;   // XOR gate
-  assign x = ~(a & b); // NAND gate
-  assign y = ~(a | b); // NOR gate
-  assign z = ~(a ^ b); // XNOR gate
-
+```
+ Developed by: Naveenaa A K
+ RegisterNumber: 212222230094
+```
+```
+input a,b;
+output andgate,orgate,notgate,nandgate,norgate,xorgate,xnorgate;
+and(andgate,a,b);
+or(orgate,a,b);
+not(notgate,a);// type code for NOT Gate
+nand(nandgate,a,b);
+nor(norgate,a,b);
+xor(xorgate,a,b);// type code for XOR Gate
+xnor(xnorgate,a,b);// type code for XNOR Gate
 endmodule
 ```
+
+ **Program**
+
+ 
+![312524418-91cd9c06-dc03-4c8c-9aca-5f9e3eab0189](https://github.com/Kamali22004796/study-of-basic-gates/assets/120567837/a5860abc-3a17-4894-8e4a-b522e4f96ec7)
+
+ 
 **Logic symbol & Truthtable**
 
-![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/7d3f370e-2e48-4ee8-a334-c6cdaf2f5602)
-
-![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/97319907-a63d-46e4-9134-f16aab68ce27)
-
+![312524944-f9705d15-097d-41f0-938e-727ac8c817fe](https://github.com/Kamali22004796/study-of-basic-gates/assets/120567837/e941b2b7-fc98-4842-b21b-7a3f5f464654)
 
 
 **RTL realization Output:** 
 
-![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/ea009bcd-a628-4de4-be71-11d8c993f4eb)
+
+![312525416-523d3d1f-416e-46fc-b087-8e2e92053a69](https://github.com/Kamali22004796/study-of-basic-gates/assets/120567837/94fc9f18-ee8c-4eb0-8249-2b6c8531cb44)
 
 
-**Timing diagram**
 
-![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/4ec8fff5-fade-44fc-aad9-2ad00701f1df)
+**output**
+
+![312525723-f207de9e-70e8-480c-805b-7bba6eba26d7](https://github.com/Kamali22004796/study-of-basic-gates/assets/120567837/84e9b0ed-986f-40ce-a52b-c20c3c010d82)
+
 
 
 **Result:**
 
-Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
+Thus the different digital IC’s are studied and the truth table for different logic gates are verified
 
